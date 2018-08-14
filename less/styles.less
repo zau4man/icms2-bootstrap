@@ -1,3 +1,8 @@
+@footerbg: #f5f5f5;
+@link: rgb(233, 84, 32);
+@linkh: rgb(223, 56, 44);
+@linkt: #fff;
+
 .flexblock{
     display: flex;
     min-height: 100vh;
@@ -7,10 +12,48 @@
     flex: 1;
 }
 footer{
-    height: 60px;
-    line-height: 60px;
-    background-color: #f5f5f5;
+    background-color: @footerbg;
+}
+footer .copyright{
+    padding: .5rem 0;
 }
 header .navbar-collapse{
     justify-content: space-between;
+}
+.content>.row{
+    justify-content: space-between;
+    margin-left: -30px;
+    margin-right: -30px;
+}
+/*icms*/
+.rating_widget{
+    width: 70px;
+}
+
+/*bootsptrap*/
+.navbar-nav .nav-link {
+    padding-left: 10px;
+}
+
+/*color*/
+a{
+    color: @link;
+    &:hover{
+        color: @linkh;
+        text-decoration: none;
+    }
+}
+.page-link{
+    color: @link;
+    &:hover{
+        color: @linkh;
+    }
+}
+.page-item.active .page-link{
+    color: @linkt;
+    background: @link;
+    border-color: @linkt;
+    &:hover{
+        background: @linkh;
+    }
 }

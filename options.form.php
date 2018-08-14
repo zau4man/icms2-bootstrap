@@ -21,6 +21,12 @@ class formBootstrapTemplateOptions extends cmsForm {
                             'required'
                         )
                     )),
+                    new fieldString('footertext', array(
+                        'title' => "Текст в подвале",
+                        'options' => array(
+                            'required'
+                        )
+                    )),
                 )
             ),
 

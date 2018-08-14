@@ -7,11 +7,47 @@
   flex: 1;
 }
 footer {
-  height: 60px;
-  line-height: 60px;
   background-color: #f5f5f5;
+}
+footer .copyright {
+  padding: .5rem 0;
 }
 header .navbar-collapse {
   justify-content: space-between;
+}
+.content > .row {
+  justify-content: space-between;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+/*icms*/
+.rating_widget {
+  width: 70px;
+}
+/*bootsptrap*/
+.navbar-nav .nav-link {
+  padding-left: 10px;
+}
+/*color*/
+a {
+  color: #e95420;
+}
+a:hover {
+  color: #df382c;
+  text-decoration: none;
+}
+.page-link {
+  color: #e95420;
+}
+.page-link:hover {
+  color: #df382c;
+}
+.page-item.active .page-link {
+  color: #fff;
+  background: #e95420;
+  border-color: #fff;
+}
+.page-item.active .page-link:hover {
+  background: #df382c;
 }
 /*# sourceMappingURL=styles.css.map */

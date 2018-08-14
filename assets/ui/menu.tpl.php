@@ -1,4 +1,4 @@
-<ul class="<?php echo $css_class; ?>">
+<ul class="nav <?php echo $css_class; ?>">
 
     <?php $last_level = 0; ?>
 

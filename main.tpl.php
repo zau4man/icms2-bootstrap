@@ -10,6 +10,7 @@
         <?php $this->addMainCSS("templates/{$this->name}/css/styles.css"); ?>
         <?php $this->addMainJS("templates/default/js/jquery.js"); ?>
         <?php $this->addMainJS("templates/{$this->name}/js/bootstrap.min.js"); ?>
+        <?php $this->addMainJS("templates/{$this->name}/js/modal.js"); ?>
         <!--[if lt IE 9]>
             <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
             <script src="//cdnjs.cloudflare.com/ajax/libs/livingston-css3-mediaqueries-js/1.0.0/css3-mediaqueries.min.js"></script>
@@ -22,16 +23,16 @@
         <div class="container flexblock">
             <header>
                 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm border">
-                    
+
                     <a class="navbar-brand" href="/"><?php echo html_image($this->options['logo'], 'micro'); ?><?php echo $this->options['logotext']; ?></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                        
-                        <?php $this->widgets('header',false,'wrapper_plain'); ?>
-                        
+
+                        <?php $this->widgets('header', false, 'wrapper_plain'); ?>
+
                         <form class="form-inline my-2 my-lg-0">
                             <input class="form-control mr-sm-2" type="search" placeholder="Поиск">
                             <button class="btn my-2 my-sm-0" type="submit">Поиск</button>
@@ -42,10 +43,10 @@
             <main role="main" class="container content">
                 <div class="row">
 
-                    <?php 
+                    <?php
                     $class = $this->hasWidgetsOn('sb') ? "col-md-9 col-sm-12" : "col";
                     ?>
-                    
+
                     <div class="<?php echo $class; ?>">
 
                         <?php
@@ -58,7 +59,7 @@
                                 <?php } ?>
                             </div>
                         <?php } ?>
-                        
+
                         <?php $this->widgets('top'); ?>
 
                         <?php if ($this->isBody()) { ?>
@@ -74,27 +75,26 @@
                                 </div>
                             </article>
                         <?php } ?>
-                        
+
                         <?php $this->widgets('bottom'); ?>
 
                     </div>
-                    <?php if($this->hasWidgetsOn('sb')) {?>
-                    <div class="col-md-3 col-sm-12">
-                        <?php $this->widgets('sb'); ?>
-                    </div>
+                    <?php if ($this->hasWidgetsOn('sb')) { ?>
+                        <div class="col-md-3 col-sm-12">
+                            <?php $this->widgets('sb'); ?>
+                        </div>
                     <?php } ?>
                 </div>
             </main>
             <footer class="footer shadow-sm border">
                 <div class="container">
-                  <div class="d-sm-flex justify-content-between">
-                    <div class="text-muted copyright"><?php echo $this->options['footertext']; ?></div>
-                    <div class=""><?php $this->widgets('footer',false,'wrapper_plain'); ?></div>
-                  </div>
-                    
-                  </div>
-                </footer>
-        </div>
+                    <div class="d-sm-flex justify-content-between">
+                        <div class="text-muted copyright"><?php echo $this->options['footertext']; ?></div>
+                        <div class=""><?php $this->widgets('footer', false, 'wrapper_plain'); ?></div>
+                    </div>
 
+                </div>
+            </footer>
+        </div>
     </body>
 </html>

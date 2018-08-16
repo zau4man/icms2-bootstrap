@@ -12,7 +12,7 @@
     flex: 1;
 }
 footer{
-    background-color: @footerbg;
+
 }
 footer .copyright{
     padding: .5rem 0;
@@ -36,6 +36,9 @@ header .navbar-collapse{
 }
 
 /*color*/
+footer{
+    background-color: @footerbg;
+}
 a{
     color: @link;
     &:hover{
@@ -55,5 +58,11 @@ a{
     border-color: @linkt;
     &:hover{
         background: @linkh;
+    }
+}
+.dropdown-item.active, .dropdown-item{
+    &:active{
+        background: @linkh;
+        color: @linkt;
     }
 }

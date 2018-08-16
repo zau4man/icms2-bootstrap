@@ -6,9 +6,6 @@
 .content {
   flex: 1;
 }
-footer {
-  background-color: #f5f5f5;
-}
 footer .copyright {
   padding: .5rem 0;
 }
@@ -29,6 +26,9 @@ header .navbar-collapse {
   padding-left: 10px;
 }
 /*color*/
+footer {
+  background-color: #f5f5f5;
+}
 a {
   color: #e95420;
 }
@@ -49,5 +49,10 @@ a:hover {
 }
 .page-item.active .page-link:hover {
   background: #df382c;
+}
+.dropdown-item.active:active,
+.dropdown-item:active {
+  background: #df382c;
+  color: #fff;
 }
 /*# sourceMappingURL=styles.css.map */
